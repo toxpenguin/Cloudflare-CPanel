@@ -10,7 +10,7 @@ INSTALL_DIR="/usr/local/cpanel"
 CPANELSUPPORTEDPHPPATH=`ls -al $INSTALL_DIR/3rdparty/bin/php | awk '{print $11}'`
 PHPVERSION=`echo $CPANELSUPPORTEDPHPPATH | rev | cut -d '/' -f 3 | rev`
 
-rm -rf $INSTALL_DIR/base/frontend/paper_lantern/cloudflare
+rm -rf $INSTALL_DIR/base/frontend/jupiter/cloudflare
 rm -rf $INSTALL_DIR/bin/admin/CloudFlare
 rm -rf $INSTALL_DIR/3rdparty/php/$PHPVERSION/lib/php/cloudflare
 
@@ -22,7 +22,7 @@ rm -rf $INSTALL_DIR/bin/admin/CloudFlare
 
 rm -rf $INSTALL_DIR/bin/cloudflare_update.sh
 
-rm -f $INSTALL_DIR/base/frontend/paper_lantern/dynamicui/dynamicui_cloudflare*.conf
+rm -f $INSTALL_DIR/base/frontend/jupiter/dynamicui/dynamicui_cloudflare*.conf
 
 ## Remove post update call
 cfonupgrade=`grep -F "cloudflare_update" /scripts/postupcp`
