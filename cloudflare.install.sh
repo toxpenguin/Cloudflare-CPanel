@@ -99,7 +99,7 @@ if [ "$LOCAL_FILE_PATH" = "" ]; then
 
     # Find the proper version to download
     #LATEST_VERSION=$(curl -s https://api.cloudflare.com/host-gw.html -d "act=cpanel_info" -d "host_key=$HOST_KEY" | sed -e 's/[{}]/''/g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i<=n; i++) print a[i]}' | grep cpanel_latest | cut -d "\"" -f 6)
-    LATEST_VERSION=$(curl --silent "https://api.github.com/repos/toxpenguin/CloudFlare-CPanel/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+    LATEST_VERSION=$(curl --silent "https://api.github.com/repos/toxpenguin/CloudFlare-CPanel/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -d"v" -f2)
 
     if [ "$VERBOSE" = true ]; then
         echo "LATEST_VERSION - '$LATEST_VERSION'"
