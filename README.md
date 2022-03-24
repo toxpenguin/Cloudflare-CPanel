@@ -4,7 +4,7 @@ Setup Cloudflare cPanel Plugin for Jupiter theme
 
 ## Build
 
-[![Build Status](https://travis-ci.org/toxpenguin/Cloudflare-CPanel.svg?branch=main)](https://travis-ci.org/toxpenguin/Cloudflare-CPanel)
+[![Build Status](https://travis-ci.com/toxpenguin/Cloudflare-CPanel.svg?branch=main)](https://travis-ci.com/toxpenguin/Cloudflare-CPanel)
 
 ## Cloudflare cPanel Quick Installation Instructions
 
