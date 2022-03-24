@@ -1,9 +1,9 @@
 {
-  "name": "cloudflare/cloudflare-cpanel",
+  "name": "toxpenguin/cloudflare-cpanel",
   "description": "A CloudFlare plugin for CPanel",
   "license": "BSD-3-Clause",
-  "version": "7.0.1",
-  "homepage": "https://github.com/cloudflare/CloudFlare-CPanel",
+  "version": "7.0.2",
+  "homepage": "https://github.com/toxpenguin/CloudFlare-CPanel",
   "scripts": {
     "test": "vendor/bin/phpunit src/Test",
     "lint": "vendor/bin/phpcs -n --standard=PSR2 --extensions=php,live.php src/",
