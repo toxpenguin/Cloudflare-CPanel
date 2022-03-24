@@ -1,6 +1,6 @@
 [
     {
-        "icon" : "logo-cloudflare.svg",
+        "icon" : "cloudflare.svg",
         "name" : "Cloudflare",
         "group_id" : "domainesia",
         "order" : 16,
