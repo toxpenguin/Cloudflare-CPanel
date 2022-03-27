@@ -218,7 +218,7 @@ install -d $INSTALL_DIR/3rdparty/php/$PHPVERSION/lib/php/cloudflare/src
 /bin/cp -rf $SOURCE_DIR/src/* $INSTALL_DIR/3rdparty/php/$PHPVERSION/lib/php/cloudflare/src
 
 # Register the plugin buttons with Cpanel
-/usr/local/cpanel/scripts/install_plugin $SOURCE_DIR/installers/cloudflare_simple.tar.bz2
+/usr/local/cpanel/scripts/install_plugin --theme jupiter $SOURCE_DIR/installers/cloudflare_simple.tar.bz2
 
 # Copy cloudflare_update.sh to where the cron expects it to be
 install $SOURCE_DIR/cloudflare_update.sh $INSTALL_DIR/bin
